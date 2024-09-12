@@ -1,0 +1,45 @@
+let
+  Source = Csv.Document(Web.Contents("https://powerplatform23-my.sharepoint.com/personal/alex_powerplatform23_onmicrosoft_com/Documents/Apps/Microsoft Power Query/Uploaded Files/audible_uncleaned.csv"), [Delimiter = ",", Columns = 8, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
+  Promote = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+  ReplaceV = Table.ReplaceValue(Promote, "Free", "0", Replacer.ReplaceValue, {"price"}),
+  ColType = Table.TransformColumnTypes(ReplaceV, {{"name", type text}, {"author", type text}, {"narrator", type text}, {"time", type text}, {"releasedate", type text}, {"language", type text}, {"stars", type text}, {"price", Int64.Type}}),
+  #"Added index" = Table.AddIndexColumn(ColType, "AudiobookId", 0, 1, Int64.Type),
+  Replace = Table.ReplaceValue(#"Added index", "Writtenby:", "", Replacer.ReplaceText, {"author"}),
+  AddHours = Table.TransformColumnTypes(
+    Table.AddColumn(Replace, "Hours", each 
+        if Text.Contains(_[time], "hrs") then 
+            Number.From(Text.BeforeDelimiter(_[time], " hrs")) * 60
+        else 
+            0
+    ), 
+    {{"Hours", Int64.Type}}
+),
+  AddMin = Table.TransformColumnTypes(
+    Table.AddColumn(AddHours, "Min", each 
+        if Text.Contains(_[time], "and ") then 
+            Text.Select(Text.AfterDelimiter(_[time], "and "), {"0".."9"}) 
+        else 
+            "0"
+    ), 
+    {{"Min", Int64.Type}}
+),
+  DurationMinutes = Table.TransformColumnTypes(Table.AddColumn(AddMin, "DurationMinutes", each [Hours] + [Min]),{{"DurationMinutes", Int64.Type}}),
+  Removed = Table.RemoveColumns(DurationMinutes, {"Hours", "Min", "narrator", "time"}),
+  Renamed = Table.RenameColumns(Removed, {{"name", "Bookname"}, {"author", "PrimaryAuthor"}}),
+  AddRating = 
+Table.TransformColumnTypes(
+  Table.ReplaceValue(
+      Table.AddColumn(Renamed, "Rating", each try Number.FromText(Text.BeforeDelimiter([stars], " out of")) otherwise null),
+      null, 
+      0, 
+      Replacer.ReplaceValue, 
+      {"Rating"}
+  ), {{"Rating", type number}}),
+  AddNoOfRating = Table.TransformColumnTypes(
+Table.AddColumn(AddRating, "NoOfRatings", each Text.Select(Text.AfterDelimiter([stars], "stars"), {"0".."9"}))
+, {{"NoOfRatings", Int64.Type}}),
+  DateLocale = Table.TransformColumnTypes(AddNoOfRating, {{"releasedate", type date}}, "en-GB"),
+  RemovedCol = Table.RemoveColumns(DateLocale, {"stars"}),
+  #"Replaced value" = Table.ReplaceValue(RemovedCol, null, 0, Replacer.ReplaceValue, {"NoOfRatings"})
+in
+  #"Replaced value"
