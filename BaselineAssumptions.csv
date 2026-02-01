@@ -1,0 +1,5 @@
+AssumptionKey,CountryKey,Year,MarketGrowth,InflationRate,CompetitiveIndex,AssumptionNotes,UpdatedDate,UpdatedBy
+1,1,2026,0.055,0.028,0.85,France: Moderate growth expected. New competitor launched Q3 2025. Digital transformation initiatives ongoing.,2025-09-15,Finance
+2,2,2026,0.048,0.025,0.9,Germany: Stable market. EV sector growth offsetting industrial slowdown. Automotive sector strong.,2025-09-15,Finance
+3,3,2026,0.062,0.032,0.8,Spain: Higher growth potential. Tourism recovery complete. Manufacturing expansion in progress.,2025-09-15,Finance
+4,4,2026,0.059,0.03,0.82,Italy: Steady growth. Retail sector modernization. Some economic headwinds from EU policy changes.,2025-09-15,Finance

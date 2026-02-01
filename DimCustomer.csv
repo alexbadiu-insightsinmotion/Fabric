@@ -1,0 +1,41 @@
+CustomerKey,CustomerName,City,CountryKey,Segment,CustomerSize,Industry,GroupKey,GroupName,YearEstablished,AnnualRevenue_M
+1001,TechCorp SARL,Paris,1,Enterprise,Large,Technology,1,Strategic Accounts,1998,112
+1002,Deutsche Systems GmbH,Berlin,2,Enterprise,Large,Manufacturing,1,Strategic Accounts,2003,225
+1003,Retail Solutions France,Lyon,1,Enterprise,Large,Retail,1,Strategic Accounts,2002,171
+1004,München Industries,Munich,2,Enterprise,Large,Industrial,1,Strategic Accounts,1998,446
+1005,Paris Financial Group,Paris,1,Enterprise,Large,Financial Services,1,Strategic Accounts,1997,402
+1006,Madrid Enterprises,Madrid,3,Enterprise,Large,Diversified,1,Strategic Accounts,2008,116
+1007,Roma Technologies,Rome,4,Enterprise,Large,Technology,1,Strategic Accounts,1995,147
+1008,Barcelona Manufacturing,Barcelona,3,Enterprise,Large,Manufacturing,1,Strategic Accounts,2001,219
+1009,Milano Retail Group,Milan,4,Enterprise,Large,Retail,1,Strategic Accounts,1995,387
+1010,Valencia Systems,Valencia,3,Enterprise,Large,Technology,1,Strategic Accounts,2001,466
+1011,French Auto Parts,Toulouse,1,Mid-Market,Medium,Automotive,2,Core Accounts,2015,89
+1012,Berlin Logistics,Berlin,2,Mid-Market,Medium,Logistics,2,Core Accounts,2011,48
+1013,Marseille Trading,Marseille,1,Mid-Market,Medium,Distribution,2,Core Accounts,2012,95
+1014,Hamburg Distribution,Hamburg,2,Mid-Market,Medium,Distribution,2,Core Accounts,2009,20
+1015,Nice Electronics,Nice,1,Mid-Market,Medium,Electronics,2,Core Accounts,2017,40
+1016,Frankfurt Finance,Frankfurt,2,Mid-Market,Medium,Financial Services,2,Core Accounts,2016,74
+1017,Bordeaux Beverages,Bordeaux,1,Mid-Market,Medium,Food & Beverage,2,Core Accounts,2010,55
+1018,Stuttgart Components,Stuttgart,2,Mid-Market,Medium,Manufacturing,2,Core Accounts,2007,47
+1019,Strasbourg Pharma,Strasbourg,1,Mid-Market,Medium,Healthcare,2,Core Accounts,2017,63
+1020,Seville Logistics,Seville,3,Mid-Market,Medium,Logistics,2,Core Accounts,2006,31
+1021,Florence Textiles,Florence,4,Mid-Market,Medium,Fashion,2,Core Accounts,2011,32
+1022,Bilbao Industrial,Bilbao,3,Mid-Market,Medium,Industrial,2,Core Accounts,2010,64
+1023,Turin Automotive,Turin,4,Mid-Market,Medium,Automotive,2,Core Accounts,2014,53
+1024,Malaga Tourism Services,Malaga,3,Mid-Market,Medium,Hospitality,2,Core Accounts,2017,25
+1025,Naples Food Group,Naples,4,Mid-Market,Medium,Food & Beverage,2,Core Accounts,2016,78
+1026,Zaragoza Energy,Zaragoza,3,Mid-Market,Medium,Energy,2,Core Accounts,2013,35
+1027,Bologna Pharma,Bologna,4,Mid-Market,Medium,Healthcare,2,Core Accounts,2011,30
+1028,Granada Tech,Granada,3,Mid-Market,Medium,Technology,2,Core Accounts,2013,57
+1029,Lille Startup Hub,Lille,1,SMB,Small,Technology,3,Growth Accounts,2023,24
+1030,Cologne Digital,Cologne,2,SMB,Small,Digital Services,3,Growth Accounts,2020,23
+1031,Nantes Innovation,Nantes,1,SMB,Small,Technology,3,Growth Accounts,2019,7
+1032,Düsseldorf Cloud,Düsseldorf,2,SMB,Small,Technology,3,Growth Accounts,2018,12
+1033,Montpellier Biotech,Montpellier,1,SMB,Small,Healthcare,3,Growth Accounts,2020,7
+1034,Nuremberg AI,Nuremberg,2,SMB,Small,Technology,3,Growth Accounts,2019,8
+1035,Palma Digital,Palma,3,SMB,Small,Technology,3,Growth Accounts,2021,13
+1036,Verona Innovations,Verona,4,SMB,Small,Technology,3,Growth Accounts,2021,25
+1037,Cordoba Tech,Cordoba,3,SMB,Small,Technology,3,Growth Accounts,2020,10
+1038,Genoa Maritime,Genoa,4,SMB,Small,Logistics,3,Growth Accounts,2020,16
+1039,Alicante Clean Energy,Alicante,3,SMB,Small,Energy,3,Growth Accounts,2019,13
+1040,Padua Analytics,Padua,4,SMB,Small,Technology,3,Growth Accounts,2023,25

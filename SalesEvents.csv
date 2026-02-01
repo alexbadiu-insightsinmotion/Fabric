@@ -1,0 +1,16 @@
+EventID,Date,CountryKey,CustomerKey,EventType,Impact,Description,Severity
+1,2024-01-15,1,1001.0,PricingAction,+25%,Special discount (15%) to win TechCorp annual contract renewal,Medium
+2,2024-02-10,1,,SupplyChain,-18%,Manufacturing delay - 3 week backlog affected all France deliveries,High
+3,2024-03-20,2,1002.0,CompetitorIssue,+40%,"Competitor (GlobalTech) had quality issues, we gained Deutsche Systems share",High
+4,2024-06-15,1,1003.0,CustomerChurn,-100%,Lost Retail Solutions France to competitor due to aggressive pricing,Critical
+5,2024-09-10,1,1001.0,CustomerExpansion,+15%,TechCorp expanded to 2 additional locations in Paris region,Medium
+6,2024-11-25,2,1004.0,CompetitorIssue,+35%,München Industries benefited from competitor supply chain failure,High
+7,2025-01-20,1,1001.0,CustomerExpansion,+20%,TechCorp confirmed expansion to 3 more sites across France,High
+8,2025-03-15,3,1011.0,NewCustomer,New,Madrid Enterprises signed as new strategic account,High
+9,2025-05-10,2,1002.0,ProductIssue,-12%,Deutsche Systems reported quality issues with Q2 batch,Medium
+10,2025-06-20,4,1016.0,CustomerExpansion,+18%,Milano Retail opened 2 new distribution centers,Medium
+11,2025-08-05,2,,SupplyChain,-8%,Germany-wide logistics strike caused August delivery delays,Medium
+12,2025-09-15,3,1012.0,CompetitorIssue,+22%,Barcelona Manufacturing won against competitor bid,High
+13,2025-02-28,1,1005.0,PricingAction,+12%,Paris Financial Group accepted 12% price increase,Low
+14,2024-10-10,2,,MarketEvent,+5%,German government EV subsidies boosted automotive sector,Low
+15,2025-07-15,4,1017.0,NewCustomer,New,Roma Technologies signed after 9-month sales cycle,High

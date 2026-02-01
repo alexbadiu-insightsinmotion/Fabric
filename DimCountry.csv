@@ -1,0 +1,5 @@
+CountryKey,CountryName,Region,SalesPersonKey,BaselineGrowth_2026,InflationRate,CompetitiveIndex,Currency
+1,France,Western EU,1,0.055,0.028,0.85,EUR
+2,Germany,Western EU,1,0.048,0.025,0.9,EUR
+3,Spain,Southern EU,2,0.062,0.032,0.8,EUR
+4,Italy,Southern EU,2,0.059,0.03,0.82,EUR
